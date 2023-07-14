@@ -3,7 +3,7 @@ import * as Style from "./styles";
 const HorizonLine = ({
   width = "100%",
   border = "1px",
-  color = "black",
+  color = "#E0E4E8",
   margin,
 }) => {
   return (

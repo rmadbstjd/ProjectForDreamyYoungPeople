@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import * as Style from "./styles";
-
 import Header from "../MenuHeader";
 import List from "../MenuList";
 const Menu = () => {

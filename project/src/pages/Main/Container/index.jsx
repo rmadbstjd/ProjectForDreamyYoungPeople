@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import UIMain from "../UIMain";
 const Container = () => {
-  return <UIMain />;
+  const [checkedValue, setCheckedValue] = useState(null);
+  return (
+    <UIMain checkedValue={checkedValue} setCheckedValue={setCheckedValue} />
+  );
 };
 
 export default Container;
