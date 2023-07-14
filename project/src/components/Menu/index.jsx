@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import * as Style from "./styles";
+
+import Header from "../MenuHeader";
 import List from "../MenuList";
 const Menu = () => {
+  const [active, setActive] = useState(false);
+  const handleArrowButton = () => {
+    setActive((prev) => !prev);
+  };
   return (
-    <div>
-      대메뉴
-      <List />
-      <List />
-    </div>
+    <Style.Layout active={active}>
+      <Header active={active} handleArrowButton={handleArrowButton} />
+
+      {active === true ? (
+        <>
+          <List />
+          <List />
+        </>
+      ) : null}
+    </Style.Layout>
   );
 };
 

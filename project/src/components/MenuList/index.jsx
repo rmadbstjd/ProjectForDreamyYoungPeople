@@ -1,7 +1,11 @@
 import React from "react";
-
+import * as Style from "./styles";
 const List = () => {
-  return <div>소메뉴</div>;
+  return (
+    <Style.Layout>
+      <Style.Text>소메뉴</Style.Text>
+    </Style.Layout>
+  );
 };
 
 export default List;

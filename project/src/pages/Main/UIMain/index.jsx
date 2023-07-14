@@ -8,7 +8,9 @@ const UIMain = () => {
         <Menu></Menu>
         <Menu></Menu>
       </Style.SideMenu>
-      <Style.Content></Style.Content>
+      <Style.Content>
+        <Style.Header>타이틀</Style.Header>
+      </Style.Content>
     </Style.Layout>
   );
 };
