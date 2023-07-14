@@ -4,8 +4,13 @@ import Menu from "../../../components/Menu";
 import HorizonLine from "../../../components/HorizonLine";
 import Input from "../../../components/input/text";
 import Radio from "../../../components/input/radio";
-const UIMain = ({ checkedValue, setCheckedValue }) => {
-  console.log("c", checkedValue);
+import Checkbox from "../../../components/input/checkBox";
+const UIMain = ({
+  checkedRadioValue,
+  setCheckedRadioValue,
+  checkedBoxValue,
+  setCheckedBoxValue,
+}) => {
   return (
     <Style.Layout>
       <Style.SideMenu>
@@ -34,7 +39,7 @@ const UIMain = ({ checkedValue, setCheckedValue }) => {
           </Style.Option>
           <Style.Option>
             <Style.OptionTitle>날짜</Style.OptionTitle>
-            <Style.Date>2023.07.15</Style.Date>
+            <Style.Date>yyyy.mm.dd</Style.Date>
           </Style.Option>
           <Style.RadioOption>
             <Style.OptionTitle>정보5</Style.OptionTitle>
@@ -42,26 +47,46 @@ const UIMain = ({ checkedValue, setCheckedValue }) => {
               <Style.RadioContainer>
                 <Radio
                   title={"선택1"}
-                  checkedValue={checkedValue}
-                  setCheckedValue={setCheckedValue}
+                  checkedRadioValue={checkedRadioValue}
+                  setCheckedRadioValue={setCheckedRadioValue}
                 />
                 <Radio
                   title={"선택2"}
-                  checkedValue={checkedValue}
-                  setCheckedValue={setCheckedValue}
+                  checkedRadioValue={checkedRadioValue}
+                  setCheckedRadioValue={setCheckedRadioValue}
                 />
                 <Radio
                   title={"선택3"}
-                  checkedValue={checkedValue}
-                  setCheckedValue={setCheckedValue}
+                  checkedRadioValue={checkedRadioValue}
+                  setCheckedRadioValue={setCheckedRadioValue}
                 />
               </Style.RadioContainer>
 
-              <Style.Text isShow={checkedValue === "선택3"}>
+              <Style.Text isShow={checkedRadioValue === "선택3"}>
                 * 선택시 텍스트가 표시됩니다.
               </Style.Text>
             </Style.RadioRightContainer>
           </Style.RadioOption>
+          <Style.Option>
+            <Style.OptionTitle>정보6</Style.OptionTitle>
+            <Style.CheckboxContainer>
+              <Checkbox
+                title={"선택1"}
+                checkedBoxValue={checkedBoxValue}
+                setCheckedBoxValue={setCheckedBoxValue}
+              />
+              <Checkbox
+                title={"선택2"}
+                checkedBoxValue={checkedBoxValue}
+                setCheckedBoxValue={setCheckedBoxValue}
+              />
+              <Checkbox
+                title={"선택3"}
+                checkedBoxValue={checkedBoxValue}
+                setCheckedBoxValue={setCheckedBoxValue}
+              />
+            </Style.CheckboxContainer>
+          </Style.Option>
         </Style.Form>
       </Style.Content>
     </Style.Layout>

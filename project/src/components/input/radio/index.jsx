@@ -4,8 +4,7 @@ import active from "../../../svg/RadioBtn/active.svg";
 import hover from "../../../svg/RadioBtn/hover.svg";
 import defaults from "../../../svg/RadioBtn/default.svg";
 
-const Radio = ({ title, checkedValue, setCheckedValue }) => {
-  console.log("checkedValue", checkedValue);
+const Radio = ({ title, checkedRadioValue, setCheckedRadioValue }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseOver = () => {
@@ -17,28 +16,28 @@ const Radio = ({ title, checkedValue, setCheckedValue }) => {
   };
 
   const handleRadioBtn = () => {
-    setCheckedValue(title);
+    setCheckedRadioValue(title);
   };
 
   return (
     <Style.Layout>
       <input
         type="radio"
-        checked={checkedValue === title}
+        checked={checkedRadioValue === title}
         id={title}
-        style={{ display: "none" }} // 기본 라디오 버튼 숨김
+        style={{ display: "none" }} // 기존의 라디오 버튼 숨김
         onChange={handleRadioBtn}
       />
       <Style.CustomRadio
         htmlFor={title}
-        isChecked={checkedValue === title}
+        isChecked={checkedRadioValue === title}
         background={
-          checkedValue === title ? active : isHovered ? hover : defaults
+          checkedRadioValue === title ? active : isHovered ? hover : defaults
         }
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       />
-      <Style.Label isChecked={checkedValue === title} htmlFor={title}>
+      <Style.Label isChecked={checkedRadioValue === title} htmlFor={title}>
         {title}
       </Style.Label>
     </Style.Layout>

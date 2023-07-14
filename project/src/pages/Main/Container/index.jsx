@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import UIMain from "../UIMain";
 const Container = () => {
-  const [checkedValue, setCheckedValue] = useState(null);
+  const [checkedRadioValue, setCheckedRadioValue] = useState(null);
+  const [checkedBoxValue, setCheckedBoxValue] = useState([]);
   return (
-    <UIMain checkedValue={checkedValue} setCheckedValue={setCheckedValue} />
+    <UIMain
+      checkedRadioValue={checkedRadioValue}
+      setCheckedRadioValue={setCheckedRadioValue}
+      checkedBoxValue={checkedBoxValue}
+      setCheckedBoxValue={setCheckedBoxValue}
+    />
   );
 };
 

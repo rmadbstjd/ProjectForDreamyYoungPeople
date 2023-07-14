@@ -54,6 +54,12 @@ export const RadioOption = styled.div`
   height: 86px;
 `;
 
+export const CheckboxContainer = styled.div`
+  display: flex;
+  position: relative;
+  left: 64px;
+`;
+
 export const OptionTitle = styled.span`
   width: 140px;
   height: 22px;
@@ -82,6 +88,7 @@ export const Date = styled.div`
   }
   text-align: left;
   cursor: pointer;
+  color: #bebebe;
 `;
 
 export const Text = styled.div`
