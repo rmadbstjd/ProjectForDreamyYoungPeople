@@ -1,9 +1,8 @@
 import React from "react";
 import * as Style from "./styles";
-import unFoldActiveIcon from "../../svg/UnFold/active.svg";
 import unFoldInActiveIcon from "../../svg/UnFold/inActive.svg";
 import foldActiveIcon from "../..//svg/Fold/active.svg";
-import foldInActiveIcon from "../../svg/Fold/inActive.svg";
+
 const MenuHeader = ({ active, handleArrowButton }) => {
   return (
     <Style.Layout active={active}>

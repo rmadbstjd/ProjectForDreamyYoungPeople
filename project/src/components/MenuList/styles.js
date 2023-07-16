@@ -3,8 +3,8 @@ import styled from "@emotion/styled";
 export const Layout = styled.div`
   color: #77777;
   font-size: 14px;
-  height: 36px;
-  width: 256px;
+  height: 2.25rem;
+  width: 16rem;
   line-height: 250%;
   &:hover {
     background: #f0f2f3;
@@ -13,6 +13,6 @@ export const Layout = styled.div`
 
 export const Text = styled.span`
   position: relative;
-  left: 35px;
+  left: 2.188rem;
   color: #777777;
 `;

@@ -3,6 +3,7 @@ import UIMain from "../UIMain";
 const Container = () => {
   const [checkedRadioValue, setCheckedRadioValue] = useState(null);
   const [checkedBoxValue, setCheckedBoxValue] = useState([]);
+
   return (
     <UIMain
       checkedRadioValue={checkedRadioValue}

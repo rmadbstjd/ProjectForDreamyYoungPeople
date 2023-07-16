@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 
 export const Layout = styled.div`
   display: flex;
-  width: 256px;
-  height: 36px;
+  width: 16rem;
+  height: 2.25rem;
   justify-content: center;
   align-items: center;
   &:hover {
@@ -15,8 +15,8 @@ export const Layout = styled.div`
 export const Content = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 203px;
-  height: 18px;
+  width: 12.688rem;
+  height: 1.125rem;
 `;
 
 export const Text = styled.span`
@@ -24,8 +24,8 @@ export const Text = styled.span`
 `;
 export const Img = styled.img`
   position: relative;
-  top: 3px;
-  width: 10px;
-  height: 10px;
+  top: 0.188rem;
+  width: 0.625rem;
+  height: 0.625rem;
   cursor: pointer;
 `;
